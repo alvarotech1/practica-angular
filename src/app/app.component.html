@@ -1,0 +1,18 @@
+<div class="mb-3">
+  <label for="usernameInput" class="form-label">Username</label>
+  <input [(ngModel)]="user" type="text" class="form-control" id="usernameInput" placeholder="username input placeholder">
+</div>
+<p>{{ user}}</p>
+<div class="mb-3">
+  <label for="passwordInput" class="form-label">Password</label>
+  <input [(ngModel)]="password" type="text" class="form-control" id="passwordInput" placeholder="password input placeholder">
+</div>
+<div class="mb-3">
+  <label for="emailInput" class="form-label">Email</label>
+  <input [(ngModel)]="email" type="text" class="form-control" id="emailInput" placeholder="email input placeholder">
+</div>
+<div class="mb-3">
+  <label for="enabledInput" class="form-label">Enabled</label>
+  <input [(ngModel)]="enabled" type="text" class="form-control" id="enabledInput" placeholder="enabled input placeholder">
+</div>
+<button (click)="guardarUsuario()">Guardar</button>
